@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+     
+    function ValidateMobileNumber() {
+        var mobileNumber = document.getElementById("phoneno").value;
+        // var lblError = document.getElementById("lblError");
+        // lblError.innerHTML = "";
+        var expr = /^(91)?[0-9]$/;
+        if (!expr.test(mobileNumber)) {
+            lblError.innerHTML = "Invalid Mobile Number.";
+        }
+    }
+
+
+    </script>
+
+</head>
+
+<body bgcolor="lightgrey">
+    <center>
+        <h1>WELCOME</h1>
+    </center>
+    <div class="form">
+    <form action="">
+        <div class="fname"><Label>FirstName</Label><span class="required">*</span></div></div>&nbsp; <input type="text" required><br><br></div>
+        <div class="lname"><Label>LastName</Label><span class="required">*</span>&nbsp;<input type="text"><br><br></div>
+        <div class="email"> <Label>Email</Label><span class="required">*</span>&nbsp;<input type="text"><br><br>
+        </div>
+        <div class="phoneno"> <Label>Phone number</Label><span class="required">*</span>&nbsp;<input type="text"><br><br>
+        </div>
+        <div class="dob"> <Label>DOB</Label><span class="required">*</span>&nbsp;<input type="text"><br><br>
+        </div>
+        <div class="gender"> <Label>Gender</Label><span class="required">*</span>&nbsp;<input type="text"><br><br>
+        </div>
+        <div class="addr1"> <Label>Address1</Label><span class="required">*</span>&nbsp;<input type="text"><br><br>
+        </div>
+        <div class="addr2"> <Label>Address2</Label><span class="required">*</span>&nbsp;<input type="text"><br><br>
+        </div>
+        <div class="city"> <Label>City</Label><span class="required">*</span>&nbsp;<input type="text"><br><br>
+        </div>
+        <div class="state"> <Label>State</Label><span class="required">*</span>&nbsp;<input type="text"><br><br>
+        </div>
+        <div class="pincode"> <Label>Postal code</Label><span class="required">*</span>&nbsp;<input type="text"><br><br>
+        </div>
+        <div class="country"> <Label>Country</Label><span class="required">*</span>&nbsp;<input type="text"><br><br>
+        </div>
+
+
+    </form> </div><br>
+    <button type="submit" onclick="ValidateMobileNumber()">Submit </button>
+</body>
+
+</html>

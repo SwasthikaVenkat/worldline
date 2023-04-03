@@ -1,0 +1,16 @@
+.body{
+    background-color: rosybrown;
+}
+
+/* button{
+    border: 3px;
+    color: brown;
+} */
+
+#form{
+    color: bisque;
+    border-radius: 5px;
+}
+.required{
+    color:red;
+}
